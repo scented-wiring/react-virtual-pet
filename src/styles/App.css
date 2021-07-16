@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  justify-content: center;
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  font-size: 50px;
+}
