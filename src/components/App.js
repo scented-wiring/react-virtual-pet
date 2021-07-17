@@ -7,15 +7,20 @@ import Actions from "./Actions";
 import "../styles/App.css";
 
 const App = () => {
-  const [health, Play] = useState([1, 1]);
-  const [hunger, Feed] = useState([1, 1]);
+  const [health, setHealth] = useState(2);
+  const [hunger, setHunger] = useState(2);
 
   return (
     <div className="App">
       <h1>Tomogotchi</h1>
       <Pet />
       <Status health={health} hunger={hunger} />
-      <Actions />
+      <Actions
+        health={health}
+        hunger={hunger}
+        setHealth={setHealth}
+        setHunger={setHunger}
+      />
     </div>
   );
 };

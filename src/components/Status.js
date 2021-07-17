@@ -5,14 +5,14 @@ const Status = ({ health, hunger }) => {
     <div class="Status">
       <div class="health">
         Health:
-        {health.map((heart) => {
-          return <i class="fas fa-heart"></i>;
+        {[...Array(health)].map((heart) => {
+          return <i className="fas fa-heart"></i>;
         })}
       </div>
       <div class="hunger">
         Hunger:
-        {hunger.map((burger) => {
-          return <i class="fas fa-hamburger"></i>;
+        {[...Array(hunger)].map((burger) => {
+          return <i className="fas fa-hamburger"></i>;
         })}
       </div>
     </div>
