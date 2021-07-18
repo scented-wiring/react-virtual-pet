@@ -2,8 +2,8 @@ import "../styles/Status.css";
 
 const Status = ({ health, hunger }) => {
   return (
-    <div class="Status">
-      <div class="health">
+    <div className="Status">
+      <div className="health">
         Health:
         {[...Array(health)].map((heart) => {
           return <i className="fas fa-heart"></i>;
@@ -12,7 +12,7 @@ const Status = ({ health, hunger }) => {
           return <i className="far fa-heart"></i>;
         })}
       </div>
-      <div class="hunger">
+      <div className="hunger">
         Hunger:
         {[...Array(hunger)].map((burger) => {
           return <i className="fas fa-lemon"></i>;

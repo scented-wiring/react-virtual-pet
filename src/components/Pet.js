@@ -1,9 +1,9 @@
 import "../styles/Pet.css";
 
-const Pet = () => {
+const Pet = ({ state }) => {
   return (
     <div className="Pet">
-      <div>Pet</div>
+      <div>{state}</div>
     </div>
   );
 };
